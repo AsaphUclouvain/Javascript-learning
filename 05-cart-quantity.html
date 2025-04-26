@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            card qunatity
+        </title>
+        
+    </head>
+    <body>
+        <button onclick="
+        console.log(`Cart Quantity: ${cartQuantity}`);
+        ">card quantity</button>
+
+        <button onclick="
+        cartQuantity++;
+        console.log(`cart Quantity: ${cartQuantity}`);
+        ">
+            add to cart
+        </button>
+
+        <button onclick="
+        cartQuantity += 2;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+        ">+2</button>
+
+        <button onclick="
+        cartQuantity += 3;
+        console.log('cart was reset.');
+        console.log(`Cart Quantity: ${cartQuantity}`);
+        ">+3</button>
+
+        <button onclick="
+        cartQuantity = 0;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+        ">Reset cart</button>
+
+        </button>
+
+        <script>
+            /*let cartQuantity = 0;
+            const variable2 = 2;
+            console.log(typeof variable2)
+            */
+            const result = 0 ? 'truthy' : 'falsy'; // tenary operator
+            console.log(result)    
+
+            false && console.log('hello'); //guard operator
+
+            const message = 5 && 'hello';
+            console.log(message);
+
+            const currency = undefined || 'USD'; //default operator
+            console.log(currency);
+        </script>
+
+    </body>
+
+</html>

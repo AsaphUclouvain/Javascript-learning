@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dom
+        </title>
+    </head>
+    <body>
+        <button>hello</button>
+        <button class="js-button">Second button</button>
+        <script>
+            console.log(document.querySelector('button').innerHTML);
+            document.querySelector('button').innerHTML = 'Changed';
+            /*
+            document.body.innerHTML = '<button>good job</button>' ;
+            document.title = 'Good job';
+            console.log(document.body);
+            */
+        </script>
+    </body>
+</html>
